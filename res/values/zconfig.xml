@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 启动页面 -->
+    <string-array name="splashscreen">
+        <item>@drawable/guide_imge</item>
+    </string-array>
+    <!-- 引导页 -->
+    <string-array name="guideImage">
+        <item>@drawable/guide_image1</item>
+        <item>@drawable/guide_image2</item>
+        <item>@drawable/guide_image3</item>
+    </string-array>
+    <!-- 首页模板HTML加载路径 -->
+    <string-array name="model_html">
+
+        <!-- <item>file:///android_asset/demo.html</item> -->
+        <item>http://192.168.0.68:8080/PhoneGapServer/</item>
+        <item>file:///android_asset/email.html</item>
+        <item>file:///android_asset/goolemap.html</item>
+        <item>file:///android_asset/show.html</item>
+    </string-array>
+    <!-- 值为：top,bottom -->
+    <string name="tab_postion">bottom</string>
+    <!-- 均分还是延伸 -->
+    <bool name="zShouldExpand">true</bool>
+
+    <!-- fragment 实例化 -->
+    <string-array name="fragment">
+        <item>org.simple.fragment.SuperWebviewFragment</item>
+        <item>org.simple.fragment.ChildFragment</item>
+        <item>org.simple.fragment.ImageListFragment</item>
+        <item>org.simple.fragment.TestImage</item>
+    </string-array>
+
+    <!-- 默认图片tab -->
+    <string-array name="tab_image">
+        <item>@drawable/ic_launcher_gplus</item>
+        <item>@drawable/ic_launcher_gmail</item>
+        <item>@drawable/ic_launcher_chrome</item>
+        <item>@drawable/ic_launcher_gmaps</item>
+    </string-array>
+    <!-- 选中 图片tab -->
+    <string-array name="tab_image_selected">
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+    </string-array>
+    <!-- 第二层fragment -->
+    <string-array name="child_titles">
+        <item>Categories</item>
+        <item>Home</item>
+        <item>Top Paid</item>
+        <item>Top Free</item>
+        <item>Top Grossing</item>
+    </string-array>
+    <string-array name="child_fragments">
+        <item>org.simple.fragment.ImageSliderFragment</item>
+        <item>org.simple.fragment.ImageSliderFragment</item>
+        <item>org.simple.fragment.ImageSliderFragment</item>
+        <item>org.simple.fragment.ImageSliderFragment</item>
+        <item>org.simple.fragment.ImageSliderFragment</item>
+    </string-array>
+    <string name="leftFragMenu">
+        org.simple.fragment.LeftMenuFragment
+    </string>
+    <string name="rightFragMen">
+       org.simple.fragment.LeftMenuFragment
+    </string>
+</resources>

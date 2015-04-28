@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/mainlayout"
+    
+    android:orientation="vertical" >
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:background="#3299cc"
+            android:id="@+id/layout_top">
+
+        
+
+        <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/titlebar_menu_selector"
+                    android:id="@+id/title_bar_left_menu"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="小测试"
+                    android:padding="6dp"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"/>
+
+            <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/skin_conversation_title_right_btn"
+                    android:id="@+id/title_bar_right_menu"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"/>
+        </FrameLayout>
+
+       
+
+    </LinearLayout>
+    
+    <org.simple.view.TabView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        apps:zposition_settings="@string/tab_postion"
+        apps:zShouldExpand="@bool/zShouldExpand"
+        android:id="@+id/tabview"
+        />
+
+</LinearLayout>
